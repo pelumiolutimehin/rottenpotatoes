@@ -8,3 +8,20 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+#movies {
+  width: 100%;
+  max-width: 60rem;
+  border-collapse: collapse;
+}
+
+#movies th,
+#movies td {
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+#movies th:first-child,
+#movies td:first-child {
+  width: 45%;
+}
