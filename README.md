@@ -1,24 +1,10 @@
-# README
+# RottenPotatoes
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A Ruby on Rails movie catalog built for CSCE 606 Programming Assignment 2. 
+Browse, add, edit, and delete movies, and sort them by title, rating, or release date.
 
-Things you may want to cover:
+**Deployed app:** https://protected-gorge-73206-211ed2c55eb2.herokuapp.com/
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Features include ascending and descending sorting, a remembered sort selection,
+and column highlighting with arrows and direction labels. 
+All styling uses handwritten CSS without a CSS library.
