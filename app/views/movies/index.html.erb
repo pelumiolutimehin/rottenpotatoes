@@ -4,12 +4,22 @@
 
 <h1>Movies</h1>
 
+<% sortable_columns = { "title" => "Title", "rating" => "Rating", "release_date" => "Release date" } %>
+
 <table id="movies">
+  <colgroup>
+    <% sortable_columns.each_key do |column| %>
+      <%= tag.col class: ("sorted-#{@sort_direction}" if @sort_column == column) %>
+    <% end %>
+    <col>
+  </colgroup>
   <thead>
     <tr>
-      <th><%= sortable_header("Title", "title") %></th>
-      <th><%= sortable_header("Rating", "rating") %></th>
-      <th><%= sortable_header("Release date", "release_date") %></th>
+      <% sortable_columns.each do |column, label| %>
+        <th scope="col">
+          <%= sortable_header(label, column) %>
+        </th>
+      <% end %>
       <th>More info</th>
     </tr>
   </thead>

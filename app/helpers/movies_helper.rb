@@ -7,7 +7,7 @@ module MoviesHelper
 
     indicator =
       if active
-        @sort_direction == "asc" ? " ↑" : " ↓"
+        @sort_direction == "asc" ? " ↑ (ascending)" : " ↓ (descending)"
       else
         ""
       end

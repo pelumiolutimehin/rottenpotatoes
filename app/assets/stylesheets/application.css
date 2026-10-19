@@ -25,3 +25,11 @@
 #movies td:first-child {
   width: 45%;
 }
+
+#movies col.sorted-asc {
+  background-color: #e3f2df;
+}
+
+#movies col.sorted-desc {
+  background-color: #dcecf9;
+}
