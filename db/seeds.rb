@@ -29,5 +29,10 @@ more_movies = [
 ]
 
 more_movies.each do |movie|
-  Movie.create!(movie)
+  # Finds by title 
+  # Creates if missing, prevents duplicates if already present
+  Movie.find_or_create_by!(title: movie[:title]) do |m|
+    m.rating = movie[:rating]
+    m.release_date = movie[:release_date]
+  end
 end
