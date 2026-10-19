@@ -7,9 +7,9 @@
 <table id="movies">
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Rating</th>
-      <th>Release date</th>
+      <th><%= sortable_header("Title", "title") %></th>
+      <th><%= sortable_header("Rating", "rating") %></th>
+      <th><%= sortable_header("Release date", "release_date") %></th>
       <th>More info</th>
     </tr>
   </thead>
