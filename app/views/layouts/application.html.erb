@@ -24,6 +24,13 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header class="site-header">
+      <%= link_to "RottenPotatoes", movies_path, class: "site-title" %>
+      <p>A catalog for movie enthusiast</p>
+    </header>
+
+    <main class="page-content">
+      <%= yield %>
+    </main>
   </body>
 </html>
